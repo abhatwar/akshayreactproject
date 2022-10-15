@@ -1,5 +1,5 @@
 import react, { useEffect, useState } from "react";
-
+import axios from 'axios'
 
 
 import './Movielist.css';
@@ -16,15 +16,20 @@ const Movielist = () => {
     }, [])
 
     const initialDetails = async () => {
-		const url = `http://www.omdbapi.com/?s=star wars&apikey=263d22d8`;
-
-		const response = await fetch(url);
-		const responseJson = await response.json();
-
-		if (responseJson.Search) {
-			setList(responseJson.Search);
-		}
+		const ans= await axios.get("http://www.omdbapi.com/?s=star_wars&apikey=263d22d8")
+        setList([...ans.data.Search])
 	};
+
+    // const initialDetails = async () => {
+	// 	const url = `http://www.omdbapi.com/?s=star wars&apikey=263d22d8`;
+
+	// 	const response = await fetch(url);
+	// 	const responseJson = await response.json();
+
+	// 	if (responseJson.Search) {
+	// 		setList(responseJson.Search);
+	// 	}
+	// };
 
 
     return (<div className="movielist-first">
