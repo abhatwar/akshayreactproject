@@ -16,7 +16,7 @@ const Movielist = () => {
     }, [])
 
     const initialDetails = async () => {
-		const ans= await axios.get("http://www.omdbapi.com/?s=star&apikey=86fd54e6")
+		const ans= await axios.get("https://www.omdbapi.com/?s=star&apikey=86fd54e6")
         setList([...ans.data.Search])
 	};
 
