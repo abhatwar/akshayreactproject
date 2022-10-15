@@ -16,8 +16,8 @@ const Movielist = () => {
     }, [])
 
     const initialDetails = async () => {
-		const ans= await axios.get("http://www.omdbapi.com/?s=star_wars&apikey=263d22d8")
-        setList([...ans.data.Search])
+		const ans= await axios.get("https://pim.wforwoman.com/pim/pimresponse.php/?service=category&store=1&url_key=top-wear-kurtas&page=1&count=20&sort_by=&sort_dir=desc&filter=")
+        setList([...ans.data.result.products])
 	};
 
     // const initialDetails = async () => {
@@ -40,7 +40,7 @@ const Movielist = () => {
             return (
                 <div key={index}>
                     <div className="card" style={{ width: "18rem" }}>
-                       <div className="one"> <img className="card-img-top" src={obj.Poster} alt="Card image cap" />
+                       <div className="one"> <img className="card-img-top" src={obj.image} alt="Card image cap" />
                         <div className="card-body">
                             <h5 className="card-title">{index + 1}{")"}{obj.Title}</h5>
                             <p className="card-text">{obj.Year}.</p>                       
