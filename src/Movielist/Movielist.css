@@ -1,0 +1,15 @@
+.movielist-first{
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-left: 20px;
+    margin-top: 10px;
+    
+
+}
+.card-img-top{
+    margin-top: 0px;
+    
+}
+

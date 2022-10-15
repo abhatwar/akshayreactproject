@@ -1,0 +1,35 @@
+.war{
+    display: flex;
+    justify-content: center;
+    
+}
+
+img{
+
+   text-align: center;
+   width: 1000px;
+   height: 500px;
+   margin-top: 50px;
+
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 71px;
+}
+
+
+.row{
+    margin: 50px;
+    width: 1000px;
+    display: flex;
+    align-items: center;
+    padding-left: 70px;
+    text-justify: auto;
+}
+.movie{
+    
+    background-color: antiquewhite;
+}
+
