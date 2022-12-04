@@ -7,6 +7,8 @@ import Link from './Link/Link';
 import Common from './Common/Common';
 import MoviesTime from './MoviesTime/MoviesTime';
 import Login from './Login/Login';
+import Footer from './Footer/Footer';
+
 
 function App() {
   return (
@@ -23,6 +25,7 @@ function App() {
           <Route path="/About" element={<About />} />
           <Route path="/Login" element={<Login/>}/>
         </Routes>
+        <Footer/>
       </BrowserRouter>
     </div>
   );

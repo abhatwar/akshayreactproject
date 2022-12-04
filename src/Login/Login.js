@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import './Login.css';
 
 
 const Login=()=> {
   return (
   
-    <div>
+    <div className='form-container'>
    <form>
   <div className="form-group">
     <label>Email address</label>
